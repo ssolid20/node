@@ -1,1 +1,1 @@
-web: python3 testFlask.py 
+web: npx nodemon server
