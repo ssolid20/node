@@ -9,13 +9,13 @@ app.use(cors());
 app.use(compression());
 app.use(helmet());
 app.use(ex.json())
-app.listen(4000);
+//app.listen(4000);
 /*app.use(ex.static(path.join(__dirname, 'dist')));
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });*/
 //var dataString = '';
-//process.env.PORT || 5000;
+process.env.PORT || 5000;
 app.use(ex.urlencoded({ extended: false }));
 app.post('/', (req, res) => {
     let x = Object.keys(req.body).toString()
